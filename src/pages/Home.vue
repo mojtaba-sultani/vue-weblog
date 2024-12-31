@@ -13,7 +13,6 @@
     <!-----------------------------------------  components Highlight Tours --------------------- -->
    <!------------------------------------------  components LatestPosts  --------------------> 
    <section>
-      <h4>Latest posts</h4>
   <LatestPosts></LatestPosts>
     </section>  
    <!------------------------------------------  components LatestPosts  --------------------> 
@@ -21,9 +20,9 @@
 </template>
 
 <script setup>
-import HighlightTours from "@/components/HomeSection/HighlightTours.vue";
-import ImageLinkCard from "@/components/HomeSection/ImageLinkCard.vue";
-import LatestPosts from "@/components/HomeSection/LatestPosts.vue";
+import HighlightTours from "@/components/HighlightTours.vue";
+import ImageLinkCard from "@/components/ImageLinkCard.vue";
+import LatestPosts from "@/components/LatestPosts.vue";
 </script>
 
 <style scoped>

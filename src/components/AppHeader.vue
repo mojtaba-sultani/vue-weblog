@@ -9,7 +9,7 @@
         <router-link to="/">HOME</router-link>
         <router-link to="/about">ABOUT</router-link>
         <router-link to="/tours">TOURS</router-link>
-        <router-link to="/tours">BLOGS</router-link>
+        <router-link to="/blogs">BLOGS</router-link>
       </nav>
     </header>
   </div>

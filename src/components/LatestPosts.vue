@@ -1,6 +1,6 @@
 <template>
   <section class="mt-10 px-5 w-full">
-    <h5>Latest posts</h5>
+    <h4>Latest posts</h4>
     <div class="grid grid-cols-2 gap-10">
       <router-link :to="{ path: ':id', name: 'CardPost', params: { id: post.id } }" v-for="post in posts" :key="post.id"
         class=" card">
@@ -49,8 +49,5 @@ fetchPosts();
 
 .post-description {
   @apply text-gray-400 text-justify leading-7
-}
-h5{
-  @apply text-gray-400 text-7xl
 }
 </style>
