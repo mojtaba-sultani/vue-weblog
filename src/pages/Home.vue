@@ -27,6 +27,6 @@ import LatestPosts from "@/components/LatestPosts.vue";
 
 <style scoped>
 h1 ,h4{
-  @apply font-semibold text-xl text-gray-500 mt-10
+  @apply font-semibold text-xl text-gray-500 mt-10 px-3 md:px-0
 }
 </style>

@@ -29,6 +29,6 @@ router-link{
   @apply flex justify-between items-center
 }
 .router-link-active{
-  @apply font-bold
+  @apply font-bold text-white bg-red-500 rounded-lg px-3
 }
 </style>

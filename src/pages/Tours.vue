@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <section class="p-5 md:p-0">
         <h1>Tours</h1>
         <p>We offer the following virtual tours to anyone who loves to travel but are concerned about health during
             PANDEMIC. Enjoy!</p>
         <highlight-tours></highlight-tours>
-    </div>
+    </section>
 </template>
 
 <script setup>

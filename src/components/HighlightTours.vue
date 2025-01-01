@@ -1,5 +1,5 @@
 <template>
-    <section class="mt-10 w-full p-5 md:p-0">
+    <section v-if="route.params.id==undefined" class="mt-10 w-full p-5 md:p-0">
         <div v-if="loading" class="loading">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-12 h-12 animate-spin"
                 viewBox="0 0 16 16">
@@ -17,17 +17,20 @@
             </router-link>
         </div>
     </section>
+    <router-view v-else></router-view>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import axios from "axios";
+import { useRoute } from "vue-router";
+const route=useRoute();
 const loading = ref(true);
 const products = ref([]);
 
 const fetchProducts = async () => {
   try {
-    const response = await axios.get("https://fakestoreapi.com/products?&limit=4");
+    const response = await axios.get("https://fakestoreapi.com/products?limit=4");
     products.value = response.data;
     loading.value = false;
   } catch (error) {
